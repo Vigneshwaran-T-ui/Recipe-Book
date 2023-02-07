@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col-xs-12">
+        <img [src]="selectedRecipe?.imagePath" alt="" class="img-responsive" width="100">
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <h1> {{selectedRecipe?.name}} </h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <div ngbDropdown class="dropdown">
+            <button ngbDropdownToggle class="btn btn-primary" type="button" id="dropdownMenuButton1"
+                aria-expanded="false">
+                Manage Recipe
+            </button>
+            <ul ngbDropdownMenu aria-labelledby="dropdownMenuButton1">
+                <li><a ngbDropdownItem href="#">To Shopping List</a></li>
+                <li><a ngbDropdownItem href="#">Edit Recipe</a></li>
+                <li><a ngbDropdownItem href="#">Delete Recipe</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        {{selectedRecipe?.description}}
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        Ingridients
+    </div>
+</div>
